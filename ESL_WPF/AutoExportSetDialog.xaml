@@ -1,0 +1,29 @@
+﻿<Window x:Class="ESL_WPF.AutoExportSetDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ESL_WPF"
+        mc:Ignorable="d"
+        Title="AutoExportSetDialog" Height="180" Width="492.5">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="316*"/>
+            <ColumnDefinition Width="143*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="AutoExportSetButton" Content="設定" HorizontalAlignment="Left" Margin="180,91,0,0" VerticalAlignment="Top" Width="106" Click="AutoExportSetButton_Click" Height="30" Background="#FFFFFFC0" RenderTransformOrigin="0.401,0.617"/>
+        <ComboBox x:Name="ExportDayCombobox" HorizontalAlignment="Left" Margin="54,10,0,0" VerticalAlignment="Top" Width="132" SelectionChanged="ExportDayCombobox_SelectionChanged" Height="31">
+            <ComboBoxItem Content="5"/>
+            <ComboBoxItem Content="10"/>
+            <ComboBoxItem Content="15"/>
+            <ComboBoxItem Content="20"/>
+            <ComboBoxItem Content="25"/>
+            <ComboBoxItem Content="30"/>
+            <ComboBoxItem Content="自訂"/>
+        </ComboBox>
+        <TextBox x:Name="ExportPathTextbox" HorizontalAlignment="Left" Height="34" Margin="54,46,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="269"/>
+        <Button x:Name="ExportPathButton" Content="路徑" HorizontalAlignment="Left" Margin="15,48,0,0" VerticalAlignment="Top" Width="93" Click="ExportPathButton_Click" Grid.Column="1" Height="32" Background="#FFFFFFC0"/>
+        <TextBox x:Name="CustomDay" HorizontalAlignment="Left" Height="23" Margin="205,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Visibility="Collapsed" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>

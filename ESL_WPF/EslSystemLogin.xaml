@@ -1,0 +1,17 @@
+﻿<Window x:Class="ESL_WPF.EslSystemLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ESL_WPF"
+        mc:Ignorable="d"
+        Title="EslSystemLogin" Height="228" Width="440">
+    <Grid>
+        <TextBox x:Name="username" HorizontalAlignment="Left" Height="23" Margin="159,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="LoginButton" Content="登入" HorizontalAlignment="Left" Margin="183,140,0,0" VerticalAlignment="Top" Width="75" Background="#FFFFFFC0" Click="LoginButton_Click"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="159,100,0,0" VerticalAlignment="Top" Width="120" Height="23"/>
+        <Label x:Name="label" Content="帳號" HorizontalAlignment="Left" Margin="159,24,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy" Content="密碼" HorizontalAlignment="Left" Margin="159,75,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
